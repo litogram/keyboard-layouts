@@ -1,0 +1,76 @@
+// Odia InScript (or-IN, linux variant) — designed layout.
+//
+// xkb `in(ori)` is an older InScript cut that misses two full-frequency
+// modern Odia letters — ୟ (ya-phala, U+0B5F) and ୱ (wa, U+0B71) — and
+// carries no danda at all, so the CLDR exemplar cannot be covered from
+// it. Windows ships the current "Odia" INSCRIPT (KLID 00000448) with
+// both letters, the dandas, and the nukta letters on AltGr. This file
+// is a key-for-key transcription of that Microsoft dump (fetched from
+// kbdlayout.info by the klc adapter), so the linux and windows variants
+// agree exactly.
+//
+// Notable positions (all from the dump):
+//   * ୟ on KeyZ (base) and ୱ on Shift — plus ୱ again on KeyB, where
+//     in(ori) had ଵ (the archaic va, kept here on AltGr+KeyB).
+//   * ASCII digits on the base number row; Odia digits ୦–୯ on AltGr.
+//   * danda । on Shift+period, double danda ॥ on AltGr+period.
+//   * ଡ଼ on AltGr+[ (single U+0B5C emission — still one keystroke).
+//
+// Single-step throughout: no dead keys, no multi-char emissions.
+
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    name[Group1]= "Odia (InScript)";
+
+    key <AE01> { [  1, exclam,      U0B67 ] };  // 1 ! ୧
+    key <AE02> { [  2, at,          U0B68 ] };  // 2 @ ୨
+    key <AE03> { [  3, numbersign,  U0B69 ] };  // 3 # ୩
+    key <AE04> { [  4, dollar,      U0B6A ] };  // 4 $ ୪
+    key <AE05> { [  5, percent,     U0B6B ] };  // 5 % ୫
+    key <AE06> { [  6, asciicircum, U0B6C ] };  // 6 ^ ୬
+    key <AE07> { [  7, ampersand,   U0B6D ] };  // 7 & ୭
+    key <AE08> { [  8, asterisk,    U0B6E ] };  // 8 * ୮
+    key <AE09> { [  9, parenleft,   U0B6F ] };  // 9 ( ୯
+    key <AE10> { [  0, parenright,  U0B66 ] };  // 0 ) ୦
+    key <AE11> { [  minus, U0B03          ] };  // - ଃ
+    key <AE12> { [  U0B43, U0B0B,   U0B44 ] };  // ୃ ଋ ୄ
+
+    key <AD01> { [  U0B4C, U0B14 ] };           // ୌ ଔ
+    key <AD02> { [  U0B48, U0B10 ] };           // ୈ ଐ
+    key <AD03> { [  U0B3E, U0B06 ] };           // ା ଆ
+    key <AD04> { [  U0B40, U0B08,   U0B63 ] };  // ୀ ଈ ୣ
+    key <AD05> { [  U0B42, U0B0A ] };           // ୂ ଊ
+    key <AD06> { [  U0B2C, U0B2D ] };           // ବ ଭ
+    key <AD07> { [  U0B39, U0B19 ] };           // ହ ଙ
+    key <AD08> { [  U0B17, U0B18 ] };           // ଗ ଘ
+    key <AD09> { [  U0B26, U0B27 ] };           // ଦ ଧ
+    key <AD10> { [  U0B1C, U0B1D ] };           // ଜ ଝ
+    key <AD11> { [  U0B21, U0B22,   U0B5C ] };  // ଡ ଢ ଡ଼
+    key <AD12> { [  U0B3C, U0B1E ] };           // ଼ ଞ
+
+    key <AC01> { [  U0B4B, U0B13 ] };           // ୋ ଓ
+    key <AC02> { [  U0B47, U0B0F ] };           // େ ଏ
+    key <AC03> { [  U0B4D, U0B05 ] };           // ୍ ଅ
+    key <AC04> { [  U0B3F, U0B07,   U0B62 ] };  // ି ଇ ୢ
+    key <AC05> { [  U0B41, U0B09 ] };           // ୁ ଉ
+    key <AC06> { [  U0B2A, U0B2B ] };           // ପ ଫ
+    key <AC07> { [  U0B30        ] };           // ର
+    key <AC08> { [  U0B15, U0B16 ] };           // କ ଖ
+    key <AC09> { [  U0B24, U0B25 ] };           // ତ ଥ
+    key <AC10> { [  U0B1A, U0B1B ] };           // ଚ ଛ
+    key <AC11> { [  U0B1F, U0B20 ] };           // ଟ ଠ
+
+    key <AB01> { [  U0B5F, U0B71 ] };           // ୟ ୱ
+    key <AB02> { [  U0B02, U0B01,   U0B70 ] };  // ଂ ଁ ୰
+    key <AB03> { [  U0B2E, U0B23 ] };           // ମ ଣ
+    key <AB04> { [  U0B28        ] };           // ନ
+    key <AB05> { [  U0B71, VoidSymbol, U0B35 ] };  // ୱ — ଵ
+    key <AB06> { [  U0B32, U0B33 ] };           // ଲ ଳ
+    key <AB07> { [  U0B38, U0B36 ] };           // ସ ଶ
+    key <AB08> { [  comma, U0B37 ] };           // , ଷ
+    key <AB09> { [  period, U0964,  U0965 ] };  // . । ॥
+    key <AB10> { [  U0B5F, U0B2F ] };           // ୟ ଯ
+
+    include "level3(ralt_switch)"
+};

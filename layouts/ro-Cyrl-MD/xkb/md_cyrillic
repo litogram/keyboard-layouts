@@ -1,0 +1,41 @@
+// Moldovan Cyrillic (ro-Cyrl-MD) — designed layout; no OS source exists.
+//
+// xkb `md` is the Romanian *Latin* layout (plus Gagauz); Windows never
+// shipped a Moldovan Cyrillic KLID (kbdlayout.info lists only the three
+// Romanian Latin layouts under 0418); CLDR has no osx keylayout. This
+// file reconstructs the layout the way Soviet-era Moldavian SSR keyboards
+// worked: the Russian ЙЦУКЕН base with the standard-orthography deviations.
+//
+// The Moldovan Cyrillic alphabet (31 letters, per the 1957 MSSR decree
+// dropping щ/ъ and the 1967 decree adding ӂ; still official in
+// Transnistria): а б в г д е ж ӂ з и й к л м н о п р с т у ф х ц ч ш
+// ы ь э ю я. Relative to Russian it lacks ё, щ, ъ and adds ӂ (U+04C2,
+// zhe with breve — Romanian ge/gi, [d͡ʒ]).
+//
+// ӂ placement — the freed щ key (AD09):
+//   * Dropping щ and ъ frees exactly two letter keys of the Russian base;
+//     the historically attested choices for the one extra letter are the
+//     щ and ъ positions.
+//   * Belarusian is the structurally identical precedent — a Cyrillic
+//     orthography that likewise lacks щ and gained one extra full-frequency
+//     letter (ў) — and its default national layout (xkb `by`, Windows KLID
+//     00000423) puts that letter on the Russian щ position, AD09.
+//   * Frequency agrees: ӂ carries every Romanian ge/gi (мерӂе, фуӂе,
+//     ӂенерал …), so it belongs on a main-block key, not the peripheral
+//     AD12 ъ key — the key Soviet typewriter keyboards frequently omitted
+//     altogether.
+//
+// щ moves to AltGr on the same key, and ё (TLDE) and ъ (AD12) keep their
+// Russian positions: all three letters are admitted in Russian loanwords
+// and proper names, so they stay reachable without costing ӂ its key.
+
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    include "ru(winkeys)"
+    name[Group1]="Moldavian (Cyrillic)";
+
+    key <AD09> { [ U04C2, U04C1, Cyrillic_shcha, Cyrillic_SHCHA ] };  // ӂ Ӂ щ Щ
+
+    include "level3(ralt_switch)"
+};

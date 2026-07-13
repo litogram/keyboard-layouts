@@ -1,0 +1,31 @@
+name: Build Windows installers
+on:
+  push:
+    paths: ['layouts/**/*.klc', '.github/workflows/build-windows.yml']
+  workflow_dispatch:
+jobs:
+  msklc:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch MSKLC
+        shell: pwsh
+        run: |
+          Invoke-WebRequest -Uri "https://download.microsoft.com/download/6/f/5/6f5ce43a-e892-4fd1-b9a6-1a0cbb64e6e2/MSKLC.exe" -OutFile MSKLC.exe
+          Start-Process -Wait -FilePath .\MSKLC.exe -ArgumentList "/quiet","/extract:msklc"
+      - name: Build installers
+        shell: pwsh
+        run: |
+          $klcs = Get-ChildItem -Recurse layouts -Filter *.klc
+          New-Item -ItemType Directory -Force out | Out-Null
+          foreach ($k in $klcs) {
+            & "msklc\bin\i386\kbdutool.exe" -u -w -s $k.FullName
+            # Package the built DLLs alongside the klc as a zip until the
+            # headless MSKLC -build path is validated on this runner.
+            $name = $k.BaseName
+            Compress-Archive -Force -Path "$name*" -DestinationPath "out\$name-windows.zip"
+          }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-installers
+          path: out/*.zip

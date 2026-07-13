@@ -1,0 +1,75 @@
+// Assamese InScript (as-IN, linux variant) — designed layout.
+//
+// xkb has no Assamese InScript: `in(asm-kagapa)` is the KaGaPa *phonetic*
+// arrangement (Bengali-script letters on Latin-phonetic positions, with
+// the Assamese letters ৰ/ৱ exiled to level-3/4), and `in(ben)` is the
+// *Bengali* InScript, which types র/ব where Assamese orthography needs
+// ৰ/ৱ. Windows, by contrast, ships a first-class "Assamese - INSCRIPT"
+// layout (KLID 0000044D). This file is a key-for-key transcription of
+// that Microsoft dump (fetched from kbdlayout.info by the klc adapter),
+// so the linux and windows variants agree exactly.
+//
+// Differences from `in(ben)` worth naming:
+//   * ৰ on the র key (AC07) and ৱ on AB05 — the two Assamese letters,
+//     on the positions their Bengali counterparts occupy.
+//   * AE12 is matra-first (ৃ, Shift ঋ), matching the Microsoft dump
+//     (in(ben) has the pair reversed).
+//   * TLDE carries the double danda ॥; danda । is Shift+period, as in
+//     the dump.
+//
+// Single-step throughout: no dead keys, no multi-char emissions.
+
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    name[Group1]= "Assamese (InScript)";
+
+    key <TLDE> { [  U0965         ] };  // ॥
+    key <AE01> { [  U09E7, exclam ] };  // ১ !
+    key <AE02> { [  U09E8, at     ] };  // ২ @
+    key <AE03> { [  U09E9         ] };  // ৩
+    key <AE04> { [  U09EA         ] };  // ৪
+    key <AE05> { [  U09EB         ] };  // ৫
+    key <AE06> { [  U09EC         ] };  // ৬
+    key <AE07> { [  U09ED         ] };  // ৭
+    key <AE08> { [  U09EE         ] };  // ৮
+    key <AE09> { [  U09EF, parenleft  ] };  // ৯ (
+    key <AE10> { [  U09E6, parenright ] };  // ০ )
+    key <AE11> { [  minus, U0983  ] };  // - ঃ
+    key <AE12> { [  U09C3, U098B  ] };  // ৃ ঋ
+
+    key <AD01> { [  U09CC, U0994  ] };  // ৌ ঔ
+    key <AD02> { [  U09C8, U0990  ] };  // ৈ ঐ
+    key <AD03> { [  U09BE, U0986  ] };  // া আ
+    key <AD04> { [  U09C0, U0988  ] };  // ী ঈ
+    key <AD05> { [  U09C2, U098A  ] };  // ূ ঊ
+    key <AD06> { [  U09AC, U09AD  ] };  // ব ভ
+    key <AD07> { [  U09B9, U0999  ] };  // হ ঙ
+    key <AD08> { [  U0997, U0998  ] };  // গ ঘ
+    key <AD09> { [  U09A6, U09A7  ] };  // দ ধ
+    key <AD10> { [  U099C, U099D  ] };  // জ ঝ
+    key <AD11> { [  U09A1, U09A2  ] };  // ড ঢ
+    key <AD12> { [  U09BC, U099E  ] };  // ় ঞ
+
+    key <AC01> { [  U09CB, U0993  ] };  // ো ও
+    key <AC02> { [  U09C7, U098F  ] };  // ে এ
+    key <AC03> { [  U09CD, U0985  ] };  // ্ অ
+    key <AC04> { [  U09BF, U0987  ] };  // ি ই
+    key <AC05> { [  U09C1, U0989  ] };  // ু উ
+    key <AC06> { [  U09AA, U09AB  ] };  // প ফ
+    key <AC07> { [  U09F0         ] };  // ৰ
+    key <AC08> { [  U0995, U0996  ] };  // ক খ
+    key <AC09> { [  U09A4, U09A5  ] };  // ত থ
+    key <AC10> { [  U099A, U099B  ] };  // চ ছ
+    key <AC11> { [  U099F, U09A0  ] };  // ট ঠ
+
+    key <AB02> { [  U0982, U0981  ] };  // ং ঁ
+    key <AB03> { [  U09AE, U09A3  ] };  // ম ণ
+    key <AB04> { [  U09A8         ] };  // ন
+    key <AB05> { [  U09F1         ] };  // ৱ
+    key <AB06> { [  U09B2         ] };  // ল
+    key <AB07> { [  U09B8, U09B6  ] };  // স শ
+    key <AB08> { [  comma, U09B7  ] };  // , ষ
+    key <AB09> { [  period, U0964 ] };  // . ।
+    key <AB10> { [  U09DF, U09AF  ] };  // য় য
+};
