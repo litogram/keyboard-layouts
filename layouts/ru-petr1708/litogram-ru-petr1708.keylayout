@@ -119,6 +119,7 @@
       <key code="2" output="ѵ"/>
       <key code="11" output="і"/>
       <key code="17" output="ѣ"/>
+      <key code="39" output="ѣ"/>
       <key code="50" output="ё"/>
     </keyMap>
     <keyMap index="3">
@@ -126,6 +127,7 @@
       <key code="2" output="Ѵ"/>
       <key code="11" output="І"/>
       <key code="17" output="Ѣ"/>
+      <key code="39" output="Ѣ"/>
       <key code="50" output="Ё"/>
     </keyMap>
   </keyMapSet>

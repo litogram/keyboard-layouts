@@ -26,7 +26,7 @@ xkb_symbols "basic" {
     key <AC08> { [ U043B, U041B ] };
     key <AC09> { [ U0434, U0414 ] };
     key <AC10> { [ U0436, U0416 ] };
-    key <AC11> { [ U044D, U042D ] };
+    key <AC11> { [ U044D, U042D, U0463, U0462 ] };
     key <AD01> { [ U0439, U0419 ] };
     key <AD02> { [ U0446, U0426 ] };
     key <AD03> { [ U0443, U0423 ] };
