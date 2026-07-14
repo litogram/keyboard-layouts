@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install the chu-glag layout (Litogram) for the current user.
+# Install the cu-glag layout (Litogram) for the current user.
 # System-wide alternative: copy xkb/glagolitic into
 # /usr/share/X11/xkb/symbols/ and add an evdev.xml entry.
 set -e

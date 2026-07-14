@@ -3,7 +3,7 @@
 Glagolitic — Old Church Slavonic in its first script (BMP block U+2C00–2C5F), bicameral; phonetic Latin-mnemonic azbuka — no OS keyboard source exists.
 
 Generated from the verified litogram layout definition
-(`layouts/chu-glag-design.json`) by keymapper's gen-os-artifacts —
+(`layouts/cu-glag-design.json`) by keymapper's gen-os-artifacts —
 the installable files teach exactly the arrangement
 [litogram.org](https://litogram.org) does. Full design rationale:
 the layout's page on litogram.org/keyboard-layouts/ and

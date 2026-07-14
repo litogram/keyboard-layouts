@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install the chu layout (Litogram) for the current user.
+# Install the cu layout (Litogram) for the current user.
 # System-wide alternative: copy xkb/church_slavonic into
 # /usr/share/X11/xkb/symbols/ and add an evdev.xml entry.
 set -e

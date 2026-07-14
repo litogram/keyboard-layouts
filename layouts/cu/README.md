@@ -3,7 +3,7 @@
 Corpus-native Church Slavonic: the BASE layer is the OCS canonical inventory at corpus frequency (for a scholar transcribing the OCS codices), not the modern Russian ЙЦУКЕН base. Historic letters and combining marks on AltGr. No OS source exists.
 
 Generated from the verified litogram layout definition
-(`layouts/chu-design.json`) by keymapper's gen-os-artifacts —
+(`layouts/cu-design.json`) by keymapper's gen-os-artifacts —
 the installable files teach exactly the arrangement
 [litogram.org](https://litogram.org) does. Full design rationale:
 the layout's page on litogram.org/keyboard-layouts/ and

@@ -1,9 +1,9 @@
 # Church Slavonic Modern (Litogram)
 
-Church Slavonic / early Cyrillic (BMP) on the modern Russian ЙЦУКЕН base (carry-over for an Orthodox reader who types Russian); historic letters and combining marks on AltGr. Secondary variant of the corpus-native chu layout. No single OS source; reconciled from community drivers.
+Church Slavonic / early Cyrillic (BMP) on the modern Russian ЙЦУКЕН base (carry-over for an Orthodox reader who types Russian); historic letters and combining marks on AltGr. Secondary variant of the corpus-native cu layout. No single OS source; reconciled from community drivers.
 
 Generated from the verified litogram layout definition
-(`layouts/chu-modern-design.json`) by keymapper's gen-os-artifacts —
+(`layouts/cu-modern-design.json`) by keymapper's gen-os-artifacts —
 the installable files teach exactly the arrangement
 [litogram.org](https://litogram.org) does. Full design rationale:
 the layout's page on litogram.org/keyboard-layouts/ and
