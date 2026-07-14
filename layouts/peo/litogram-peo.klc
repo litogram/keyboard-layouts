@@ -1,0 +1,122 @@
+﻿KBD	peo0	"Old Persian (Litogram)"
+
+COPYRIGHT	"CC BY 4.0 — litogram.org"
+COMPANY	"litogram.org"
+LOCALENAME	"peo"
+LOCALEID	"00000c00"
+VERSION	1.0
+
+SHIFTSTATE
+
+0	//Column 4
+1	//Column 5 : Shft
+2	//Column 6 :       Ctrl
+6	//Column 7 :       Ctrl Alt
+7	//Column 8 : Shft  Ctrl Alt
+
+LAYOUT		;an extra '@' at the end is a dead key
+
+29	OEM_3	0	%%	-1	-1	-1	-1
+02	1	0	-1	%%	-1	%%	-1
+03	2	0	-1	%%	-1	%%	-1
+04	3	0	-1	%%	-1	%%	-1
+05	4	0	-1	%%	-1	%%	-1
+06	5	0	-1	%%	-1	%%	-1
+07	6	0	-1	%%	-1	-1	-1
+08	7	0	-1	%%	-1	-1	-1
+09	8	0	-1	%%	-1	-1	-1
+0a	9	0	-1	-1	-1	-1	-1
+0b	0	0	-1	-1	-1	-1	-1
+0c	OEM_MINUS	0	-1	-1	-1	-1	-1
+0d	OEM_PLUS	0	-1	-1	-1	-1	-1
+10	Q	0	-1	-1	-1	-1	-1
+11	W	0	-1	-1	-1	-1	-1
+12	E	0	-1	-1	-1	-1	-1
+13	R	0	%%	-1	-1	%%	-1
+14	T	0	%%	%%	-1	%%	-1
+15	Y	0	%%	-1	-1	-1	-1
+16	U	0	%%	-1	-1	-1	-1
+17	I	0	%%	-1	-1	-1	-1
+18	O	0	-1	-1	-1	-1	-1
+19	P	0	%%	-1	-1	-1	-1
+1a	OEM_4	0	-1	-1	-1	-1	-1
+1b	OEM_6	0	-1	-1	-1	-1	-1
+1e	A	0	%%	-1	-1	-1	-1
+1f	S	0	%%	%%	-1	-1	-1
+20	D	0	%%	%%	-1	%%	-1
+21	F	0	%%	-1	-1	-1	-1
+22	G	0	%%	-1	-1	%%	-1
+23	H	0	%%	-1	-1	-1	-1
+24	J	0	%%	%%	-1	-1	-1
+25	K	0	%%	-1	-1	%%	-1
+26	L	0	%%	-1	-1	-1	-1
+27	OEM_1	0	-1	-1	-1	-1	-1
+28	OEM_7	0	-1	-1	-1	-1	-1
+2b	OEM_5	0	-1	-1	-1	-1	-1
+2c	Z	0	%%	-1	-1	-1	-1
+2d	X	0	%%	-1	-1	-1	-1
+2e	C	0	%%	%%	-1	-1	-1
+2f	V	0	%%	%%	-1	-1	-1
+30	B	0	%%	-1	-1	-1	-1
+31	N	0	%%	-1	-1	%%	-1
+32	M	0	%%	%%	-1	%%	-1
+33	OEM_COMMA	0	-1	-1	-1	-1	-1
+34	OEM_PERIOD	0	-1	-1	-1	-1	-1
+35	OEM_2	0	-1	-1	-1	-1	-1
+56	OEM_102	0	-1	-1	-1	-1	-1
+39	SPACE	0	-1	-1	-1	-1	-1
+
+LIGATURE
+
+OEM_3	0	d800	dfd0	// 𐏐
+1	1	d800	dfc8	// 𐏈
+1	6	d800	dfd1	// 𐏑
+2	1	d800	dfc9	// 𐏉
+2	6	d800	dfd2	// 𐏒
+3	1	d800	dfca	// 𐏊
+3	6	d800	dfd3	// 𐏓
+4	1	d800	dfcb	// 𐏋
+4	6	d800	dfd4	// 𐏔
+5	1	d800	dfcc	// 𐏌
+5	6	d800	dfd5	// 𐏕
+6	1	d800	dfcd	// 𐏍
+7	1	d800	dfce	// 𐏎
+8	1	d800	dfcf	// 𐏏
+R	0	d800	dfbc	// 𐎼
+R	6	d800	dfbd	// 𐎽
+T	0	d800	dfab	// 𐎫
+T	1	d800	dfb0	// 𐎰
+T	6	d800	dfac	// 𐎬
+Y	0	d800	dfb9	// 𐎹
+U	0	d800	dfa2	// 𐎢
+I	0	d800	dfa1	// 𐎡
+P	0	d800	dfb1	// 𐎱
+A	0	d800	dfa0	// 𐎠
+S	0	d800	dfbf	// 𐎿
+S	1	d800	dfc1	// 𐏁
+D	0	d800	dfad	// 𐎭
+D	1	d800	dfae	// 𐎮
+D	6	d800	dfaf	// 𐎯
+F	0	d800	dfb3	// 𐎳
+G	0	d800	dfa5	// 𐎥
+G	6	d800	dfa6	// 𐎦
+H	0	d800	dfc3	// 𐏃
+J	0	d800	dfa9	// 𐎩
+J	1	d800	dfaa	// 𐎪
+K	0	d800	dfa3	// 𐎣
+K	6	d800	dfa4	// 𐎤
+L	0	d800	dfbe	// 𐎾
+Z	0	d800	dfc0	// 𐏀
+X	0	d800	dfa7	// 𐎧
+C	0	d800	dfa8	// 𐎨
+C	1	d800	dfc2	// 𐏂
+V	0	d800	dfba	// 𐎺
+V	1	d800	dfbb	// 𐎻
+B	0	d800	dfb2	// 𐎲
+N	0	d800	dfb4	// 𐎴
+N	6	d800	dfb5	// 𐎵
+M	0	d800	dfb6	// 𐎶
+M	1	d800	dfb7	// 𐎷
+M	6	d800	dfb8	// 𐎸
+
+ENDKBD

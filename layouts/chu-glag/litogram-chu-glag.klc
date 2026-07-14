@@ -1,0 +1,69 @@
+﻿KBD	glag0	"Glagolitic (Litogram)"
+
+COPYRIGHT	"CC BY 4.0 — litogram.org"
+COMPANY	"litogram.org"
+LOCALENAME	"cu-Glag"
+LOCALEID	"00000c00"
+VERSION	1.0
+
+SHIFTSTATE
+
+0	//Column 4
+1	//Column 5 : Shft
+2	//Column 6 :       Ctrl
+6	//Column 7 :       Ctrl Alt
+7	//Column 8 : Shft  Ctrl Alt
+
+LAYOUT		;an extra '@' at the end is a dead key
+
+29	OEM_3	0	-1	-1	-1	-1	-1
+02	1	0	-1	-1	-1	-1	-1
+03	2	0	-1	-1	-1	-1	-1
+04	3	0	-1	-1	-1	-1	-1
+05	4	0	-1	-1	-1	-1	-1
+06	5	0	-1	-1	-1	-1	-1
+07	6	0	-1	-1	-1	-1	-1
+08	7	0	-1	-1	-1	-1	-1
+09	8	0	-1	-1	-1	-1	-1
+0a	9	0	-1	-1	-1	-1	-1
+0b	0	0	-1	-1	-1	-1	-1
+0c	OEM_MINUS	0	-1	-1	-1	-1	-1
+0d	OEM_PLUS	0	-1	-1	-1	-1	-1
+10	Q	1	2c3c	2c0c	-1	-1	-1
+11	W	1	2c4e	2c1e	-1	2c4b	2c1b
+12	E	1	2c35	2c05	-1	2c51	2c21
+13	R	1	2c43	2c13	-1	-1	-1
+14	T	1	2c45	2c15	-1	-1	-1
+15	Y	1	2c4f	2c1f	-1	2c50	2c20
+16	U	1	2c46	2c16	-1	2c53	2c23
+17	I	1	2c3b	2c0b	-1	2c39	2c09
+18	O	1	2c41	2c11	-1	2c49	2c19
+19	P	1	2c42	2c12	-1	2c4a	2c1a
+1a	OEM_4	1	2c54	2c24	-1	2c57	2c27
+1b	OEM_6	1	2c58	2c28	-1	2c59	2c29
+1e	A	1	2c30	2c00	-1	2c5d	2c2d
+1f	S	1	2c44	2c14	-1	2c5c	2c2c
+20	D	1	2c34	2c04	-1	2c37	2c07
+21	F	1	2c51	2c21	-1	2c47	2c17
+22	G	1	2c33	2c03	-1	-1	-1
+23	H	1	2c48	2c18	-1	-1	-1
+24	J	1	2c3a	2c0a	-1	-1	-1
+25	K	1	2c3d	2c0d	-1	-1	-1
+26	L	1	2c3e	2c0e	-1	-1	-1
+27	OEM_1	0	-1	-1	-1	2c56	2c26
+28	OEM_7	0	-1	-1	-1	2c55	2c25
+2b	OEM_5	0	-1	-1	-1	-1	-1
+2c	Z	1	2c38	2c08	-1	2c36	2c06
+2d	X	1	2c52	2c22	-1	2c5a	2c2a
+2e	C	1	2c4c	2c1c	-1	2c4d	2c1d
+2f	V	1	2c32	2c02	-1	2c5b	2c2b
+30	B	1	2c31	2c01	-1	-1	-1
+31	N	1	2c40	2c10	-1	-1	-1
+32	M	1	2c3f	2c0f	-1	2c5e	2c2e
+33	OEM_COMMA	0	-1	-1	-1	-1	-1
+34	OEM_PERIOD	0	-1	-1	-1	-1	-1
+35	OEM_2	0	-1	-1	-1	-1	-1
+56	OEM_102	0	-1	-1	-1	-1	-1
+39	SPACE	0	-1	-1	-1	-1	-1
+
+ENDKBD
