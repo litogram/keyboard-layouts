@@ -14,24 +14,24 @@
   </modifierMap>
   <keyMapSet id="m0">
     <keyMap index="0">
-      <key code="0" output="ф"/>
-      <key code="1" output="ы"/>
-      <key code="2" output="в"/>
-      <key code="3" output="а"/>
-      <key code="4" output="р"/>
-      <key code="5" output="п"/>
-      <key code="6" output="ꙗ"/>
-      <key code="7" output="ч"/>
-      <key code="8" output="с"/>
-      <key code="9" output="м"/>
+      <key code="0" action="b_38"/>
+      <key code="1" action="b_35"/>
+      <key code="2" action="b_1"/>
+      <key code="3" action="b_21"/>
+      <key code="4" action="b_12"/>
+      <key code="5" action="b_11"/>
+      <key code="6" action="b_26"/>
+      <key code="7" action="b_17"/>
+      <key code="8" action="b_13"/>
+      <key code="9" action="b_8"/>
       <key code="10" output="/"/>
       <key code="11" output="и"/>
-      <key code="12" output="і"/>
-      <key code="13" output="ц"/>
-      <key code="14" output="у"/>
-      <key code="15" output="к"/>
-      <key code="16" output="н"/>
-      <key code="17" output="е"/>
+      <key code="12" action="b_27"/>
+      <key code="13" action="b_16"/>
+      <key code="14" action="b_33"/>
+      <key code="15" action="b_6"/>
+      <key code="16" action="b_9"/>
+      <key code="17" action="b_22"/>
       <key code="18" output="1"/>
       <key code="19" output="2"/>
       <key code="20" output="3"/>
@@ -44,24 +44,24 @@
       <key code="27" output="-"/>
       <key code="28" output="8"/>
       <key code="29" output="0"/>
-      <key code="30" output="ъ"/>
-      <key code="31" output="щ"/>
-      <key code="32" output="г"/>
-      <key code="33" output="х"/>
-      <key code="34" output="ш"/>
-      <key code="35" output="з"/>
-      <key code="37" output="д"/>
-      <key code="38" output="о"/>
-      <key code="39" output="ѣ"/>
-      <key code="40" output="л"/>
-      <key code="41" output="ж"/>
+      <key code="30" action="b_34"/>
+      <key code="31" action="b_19"/>
+      <key code="32" action="b_2"/>
+      <key code="33" action="b_15"/>
+      <key code="34" action="b_18"/>
+      <key code="35" action="b_5"/>
+      <key code="37" action="b_3"/>
+      <key code="38" action="b_10"/>
+      <key code="39" action="b_24"/>
+      <key code="40" action="b_7"/>
+      <key code="41" action="b_4"/>
       <key code="42" output="\"/>
-      <key code="43" output="б"/>
+      <key code="43" action="b_0"/>
       <key code="44" output="."/>
-      <key code="45" output="т"/>
-      <key code="46" output="ь"/>
-      <key code="47" output="ю"/>
-      <key code="50" output="ѡ"/>
+      <key code="45" action="b_14"/>
+      <key code="46" action="b_36"/>
+      <key code="47" action="b_25"/>
+      <key code="50" action="b_37"/>
       <key code="49" output=" "/>
     </keyMap>
     <keyMap index="1">
@@ -77,7 +77,7 @@
       <key code="9" output="М"/>
       <key code="10" output="|"/>
       <key code="11" output="И"/>
-      <key code="12" output="І"/>
+      <key code="12" output="Ѧ"/>
       <key code="13" output="Ц"/>
       <key code="14" output="У"/>
       <key code="15" output="К"/>
@@ -115,30 +115,31 @@
       <key code="50" output="Ѡ"/>
     </keyMap>
     <keyMap index="2">
-      <key code="0" output="ѳ"/>
-      <key code="6" output="ѧ"/>
+      <key code="0" action="b_20"/>
       <key code="11" output="ѵ"/>
-      <key code="14" output="ꙋ"/>
-      <key code="17" output="ѥ"/>
-      <key code="19" output="є"/>
+      <key code="12" action="b_31"/>
+      <key code="14" action="b_23"/>
+      <key code="17" action="b_39"/>
+      <key code="19" action="b_30"/>
       <key code="20" output="ѯ"/>
       <key code="21" output="ѱ"/>
       <key code="22" output="ѩ"/>
       <key code="24" output="҆"/>
-      <key code="25" output="ѭ"/>
+      <key code="25" action="b_29"/>
       <key code="26" output="ѿ"/>
       <key code="27" output="҃"/>
-      <key code="28" output="ѫ"/>
+      <key code="28" action="b_28"/>
       <key code="29" output="҂"/>
       <key code="30" output="́"/>
+      <key code="33" action="a_dk0"/>
       <key code="35" output="ѕ"/>
       <key code="42" output="꙽"/>
-      <key code="50" output="ї"/>
+      <key code="50" action="b_32"/>
     </keyMap>
     <keyMap index="3">
       <key code="0" output="Ѳ"/>
-      <key code="6" output="Ѧ"/>
       <key code="11" output="Ѵ"/>
+      <key code="12" output="І"/>
       <key code="14" output="Ꙋ"/>
       <key code="17" output="Ѥ"/>
       <key code="19" output="Є"/>
@@ -156,4 +157,172 @@
       <key code="50" output="Ї"/>
     </keyMap>
   </keyMapSet>
+  <actions>
+  <action id="a_dk0">
+    <when state="none" next="dk0"/>
+  </action>
+  <action id="b_0">
+    <when state="none" output="б"/>
+    <when state="dk0" output="ⷠ"/>
+  </action>
+  <action id="b_1">
+    <when state="none" output="в"/>
+    <when state="dk0" output="ⷡ"/>
+  </action>
+  <action id="b_2">
+    <when state="none" output="г"/>
+    <when state="dk0" output="ⷢ"/>
+  </action>
+  <action id="b_3">
+    <when state="none" output="д"/>
+    <when state="dk0" output="ⷣ"/>
+  </action>
+  <action id="b_4">
+    <when state="none" output="ж"/>
+    <when state="dk0" output="ⷤ"/>
+  </action>
+  <action id="b_5">
+    <when state="none" output="з"/>
+    <when state="dk0" output="ⷥ"/>
+  </action>
+  <action id="b_6">
+    <when state="none" output="к"/>
+    <when state="dk0" output="ⷦ"/>
+  </action>
+  <action id="b_7">
+    <when state="none" output="л"/>
+    <when state="dk0" output="ⷧ"/>
+  </action>
+  <action id="b_8">
+    <when state="none" output="м"/>
+    <when state="dk0" output="ⷨ"/>
+  </action>
+  <action id="b_9">
+    <when state="none" output="н"/>
+    <when state="dk0" output="ⷩ"/>
+  </action>
+  <action id="b_10">
+    <when state="none" output="о"/>
+    <when state="dk0" output="ⷪ"/>
+  </action>
+  <action id="b_11">
+    <when state="none" output="п"/>
+    <when state="dk0" output="ⷫ"/>
+  </action>
+  <action id="b_12">
+    <when state="none" output="р"/>
+    <when state="dk0" output="ⷬ"/>
+  </action>
+  <action id="b_13">
+    <when state="none" output="с"/>
+    <when state="dk0" output="ⷭ"/>
+  </action>
+  <action id="b_14">
+    <when state="none" output="т"/>
+    <when state="dk0" output="ⷮ"/>
+  </action>
+  <action id="b_15">
+    <when state="none" output="х"/>
+    <when state="dk0" output="ⷯ"/>
+  </action>
+  <action id="b_16">
+    <when state="none" output="ц"/>
+    <when state="dk0" output="ⷰ"/>
+  </action>
+  <action id="b_17">
+    <when state="none" output="ч"/>
+    <when state="dk0" output="ⷱ"/>
+  </action>
+  <action id="b_18">
+    <when state="none" output="ш"/>
+    <when state="dk0" output="ⷲ"/>
+  </action>
+  <action id="b_19">
+    <when state="none" output="щ"/>
+    <when state="dk0" output="ⷳ"/>
+  </action>
+  <action id="b_20">
+    <when state="none" output="ѳ"/>
+    <when state="dk0" output="ⷴ"/>
+  </action>
+  <action id="b_21">
+    <when state="none" output="а"/>
+    <when state="dk0" output="ⷶ"/>
+  </action>
+  <action id="b_22">
+    <when state="none" output="е"/>
+    <when state="dk0" output="ⷷ"/>
+  </action>
+  <action id="b_23">
+    <when state="none" output="ꙋ"/>
+    <when state="dk0" output="ⷹ"/>
+  </action>
+  <action id="b_24">
+    <when state="none" output="ѣ"/>
+    <when state="dk0" output="ⷺ"/>
+  </action>
+  <action id="b_25">
+    <when state="none" output="ю"/>
+    <when state="dk0" output="ⷻ"/>
+  </action>
+  <action id="b_26">
+    <when state="none" output="ꙗ"/>
+    <when state="dk0" output="ⷼ"/>
+  </action>
+  <action id="b_27">
+    <when state="none" output="ѧ"/>
+    <when state="dk0" output="ⷽ"/>
+  </action>
+  <action id="b_28">
+    <when state="none" output="ѫ"/>
+    <when state="dk0" output="ⷾ"/>
+  </action>
+  <action id="b_29">
+    <when state="none" output="ѭ"/>
+    <when state="dk0" output="ⷿ"/>
+  </action>
+  <action id="b_30">
+    <when state="none" output="є"/>
+    <when state="dk0" output="ꙴ"/>
+  </action>
+  <action id="b_31">
+    <when state="none" output="і"/>
+    <when state="dk0" output="ꙵ"/>
+  </action>
+  <action id="b_32">
+    <when state="none" output="ї"/>
+    <when state="dk0" output="ꙶ"/>
+  </action>
+  <action id="b_33">
+    <when state="none" output="у"/>
+    <when state="dk0" output="ꙷ"/>
+  </action>
+  <action id="b_34">
+    <when state="none" output="ъ"/>
+    <when state="dk0" output="ꙸ"/>
+  </action>
+  <action id="b_35">
+    <when state="none" output="ы"/>
+    <when state="dk0" output="ꙹ"/>
+  </action>
+  <action id="b_36">
+    <when state="none" output="ь"/>
+    <when state="dk0" output="ꙺ"/>
+  </action>
+  <action id="b_37">
+    <when state="none" output="ѡ"/>
+    <when state="dk0" output="ꙻ"/>
+  </action>
+  <action id="b_38">
+    <when state="none" output="ф"/>
+    <when state="dk0" output="ꚞ"/>
+  </action>
+  <action id="b_39">
+    <when state="none" output="ѥ"/>
+    <when state="dk0" output="ꚟ"/>
+  </action>
+  </actions>
+  <terminators>
+    <when state="dk0" output="ⷠ"/>
+  </terminators>
 </keyboard>
